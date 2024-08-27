@@ -1,0 +1,144 @@
+@font-face {
+    font-family:"Outfit" ;
+    src: url(/projet/fonts/Outfit-Regular.ttf) format(ttf);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: hsl(0, 0%, 100%);
+    font-family: "Outfit";
+    background-color: hsl(217, 54%, 11%);
+}
+a{
+    text-decoration: none;
+}
+.all{
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+
+    width: 320px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 14px;
+    padding: 21px;
+
+}
+div.image {
+    width: 100%;
+    position: relative;
+}
+
+.image img{
+    width: 100%;
+    border-radius: 10px;
+}
+.view{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(178, 100%, 50%,.5);
+    top: 0;
+    display: none;
+    border-radius: 10px;
+}
+.view_svg{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 3;
+    display: none;
+
+}
+.image:hover .view_svg{
+    display: block;
+}
+.image:hover .view{
+    display: block;
+}
+.title a {
+    display: inline-block;
+    color: hsl(0, 0%, 100%);
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+.title a:hover{
+    color: hsl(178, 100%, 50%);
+}
+.sub__title{
+    color: hsl(215, 51%, 70%);
+    line-height: 25px;
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 20px;
+
+}
+.money__time{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+.money{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+
+}
+.time{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7px;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: hsl(215, 32%, 27%);
+    margin-bottom: 10px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+img.profile__image{
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 100%;
+    height:35px;
+    width: 35px;
+    
+}
+.profile__data{
+    color: hsl(215, 51%, 70%);
+
+}
+.name{
+    display: inline-block;
+    margin-right: 8px;
+    color: hsl(0, 0%, 100%);
+    
+
+}
+.name:hover{
+    color: hsl(178, 100%, 50%);
+}
